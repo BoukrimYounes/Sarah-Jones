@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/hero.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>SJDesign</title>
+  </head>
+  <body class="font-montserrat text-blackColor relative">
+    <header class="bg-fleshColor relative">
+      <div
+        class="hidden sm:block bg-redColor w-32 h-32 rounded-full left-[38%] -top-16 absolute blur-md"
+      ></div>
+      <nav
+        id="nav"
+        class="flex items-center justify-between container py-2.5 relative z-10"
+      >
+        <a href="#home"
+          ><h1 class="text-2xl font-semibold font-inter text-blackColor">
+            S<span class="text-redColor">J Design</span>
+          </h1></a
+        >
+        <ul class="hidden sm:flex items-center gap-10">
+          <li>
+            <a
+              href="#about"
+              class="capitalize text-blackColor font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="capitalize text-blackColor font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="capitalize text-blackColor font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#blog"
+              class="capitalize text-blackColor font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >blog</a
+            >
+          </li>
+        </ul>
+        <a
+          href="#contact"
+          class="hidden md:inline-block bg-blackColor text-white font-bold py-2 px-4 transition duration-500 ease-in-out hover:scale-[0.90] capitalize"
+        >
+          let's talk
+        </a>
+        <ul
+          id="nav-menu"
+          class="flex sm:hidden flex-col items-center gap-5 py-10 absolute right-0 left-0 top-[-280px] bg-blackColor transition-all duration-500 ease-linear"
+        >
+          <li>
+            <a
+              href="#about"
+              class="capitalize text-white font-bold transition duration-500 ease-in-out hover:scale-[0.90] hover:text-fleshColor block"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="capitalize text-white font-bold transition duration-500 ease-in-out hover:scale-[0.90] hover:text-fleshColor block"
+              >services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#portfolio"
+              class="capitalize text-white font-bold transition duration-500 ease-in-out hover:scale-[0.90] hover:text-fleshColor block"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#blog"
+              class="capitalize text-white font-bold transition duration-500 ease-in-out hover:scale-[0.90] hover:text-fleshColor block"
+              >blog</a
+            >
+          </li>
+          <a
+            href="#"
+            id="x-menu"
+            class="absolute px-4 right-0 top-0 sm:hidden text-3xl text-white py-2.5"
+            ><i class="bx bx-x"></i
+          ></a>
+        </ul>
+        <a href="#" id="burger-menu" class="sm:hidden text-3xl"
+          ><i class="bx bx-menu"></i
+        ></a>
+      </nav>
+      <section
+        id="home"
+        class="container px-6 flex items-center justify-between gap-y-5"
+      >
+        <div id="hero-text" class="w-full lg:w-[40%] my-12">
+          <p class="text-xl font-medium mb-10 tracking-wider">UX Designer</p>
+          <h1
+            class="font-bold text-4xl sm:text-5xl mb-5 leading-relaxed tracking-wider"
+          >
+            Hi There, I’m <br />
+            <span class="text-redColor">Sarah Jones</span>
+          </h1>
+          <p class="font-medium text-base mb-5 tracking-wider">
+            Welcome to my portfolio of captivating digital experiences. Explore
+            my work and let's create something extraordinary together.
+          </p>
+          <div class="flex gap-x-5">
+            <button
+              class="bg-blackColor text-white font-bold py-2 px-4 transition duration-500 ease-in-out hover:scale-[0.90] capitalize"
+            >
+              Hire Me
+            </button>
+            <button
+              class="text-blackColor bg-white font-bold py-2 px-4 transition duration-500 ease-in-out hover:scale-[0.90] capitalize"
+            >
+              portfolio
+            </button>
+          </div>
+        </div>
+        <div id="hero-img" class="hidden lg:w-[60%] lg:block self-end">
+          <img class="w-full" src="./images/hero.svg" alt="" />
+        </div>
+      </section>
+    </header>
+    <section
+      id="about"
+      class="bg-blackColor text-white relative overflow-hidden"
+    >
+      <div class="container px-6 py-12 flex items-center flex-col gap-5">
+        <h2
+          id="about-title"
+          class="font-bold text-4xl tracking-wide capitalize"
+        >
+          About Me
+        </h2>
+        <p
+          id="about-description"
+          class="font-medium tracking-wide leading-relaxed text-center w-full md:w-[80%]"
+        >
+          I'm Sara Jones, a UI/UX designer dedicated to crafting intuitive and
+          visually stunning digital experiences. With a passion for user-centric
+          design, I transform ideas into functional and beautiful interfaces.
+          Let's collaborate and shape the future of design together.
+        </p>
+        <div
+          id="about-numbers"
+          class="flex items-center justify-center flex-wrap gap-6 sm:gap-12 z-10"
+        >
+          <div>
+            <h4
+              class="mb-2.5 font-bold text-4xl sm:text-4xl text-center text-fleshColor"
+            >
+              502
+            </h4>
+            <p class="text-center">Projects Done</p>
+          </div>
+          <div>
+            <h4
+              class="mb-2.5 font-bold text-4xl sm:text-4xl text-center text-fleshColor"
+            >
+              10+
+            </h4>
+            <p class="text-center">Years of Experience</p>
+          </div>
+          <div>
+            <h4
+              class="mb-2.5 font-bold text-4xl sm:text-4xl text-center text-fleshColor"
+            >
+              563+
+            </h4>
+            <p class="text-center">Clients Served</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="block bg-redColor w-32 h-32 rounded-full left-[50%] transform translate-x-[-50%] bottom-[-5.5rem] absolute blur-md"
+      ></div>
+    </section>
+    <section id="services" class="">
+      <div class="container px-6 py-12 flex items-center flex-col gap-5">
+        <h2
+          id="services-title"
+          class="font-bold text-4xl tracking-wide capitalize"
+        >
+          Services
+        </h2>
+        <p
+          id="services-description"
+          class="font-medium tracking-wide leading-relaxed text-center w-full lg:w-[70%]"
+        >
+          Explore my design services, from user interface and experience to
+          prototyping and testing. Let's craft exceptional digital experiences
+          together.
+        </p>
+        <div
+          id="services-grid"
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5"
+        >
+          <div id="cart-services" class="">
+            <img src="./images/services1.svg" alt="" />
+            <p class="mt-2.5 font-bold text-lg">Design</p>
+            <p class="mt-2.5 font-normal text-sm">
+              I specialize in web development and design, creating visually
+              appealing, user-friendly digital experiences.
+            </p>
+          </div>
+          <div id="cart-services" class="">
+            <img src="./images/services2.svg" alt="" />
+            <p class="mt-2.5 font-bold text-lg">Branding</p>
+            <p class="mt-2.5 font-normal text-sm">
+              I'm a branding expert, crafting unique visual identities that tell
+              your story and resonate with your audience.
+            </p>
+          </div>
+          <div id="cart-services" class="">
+            <img src="./images/services3.svg" alt="" />
+            <p class="mt-2.5 font-bold text-lg">UX Research</p>
+            <p class="mt-2.5 font-normal text-sm">
+              I specialize in user experience research, collaborating on web
+              development, and ensuring user-friendly digital products.
+            </p>
+          </div>
+          <div id="cart-services" class="">
+            <img src="./images/service4.svg" alt="" />
+            <p class="mt-2.5 font-bold text-lg">Usability Testing</p>
+            <p class="mt-2.5 font-normal text-sm">
+              I perform usability testing and optimize designs websites based on
+              real-user feedback for seamless interactions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="">
+      <div class="bg-fleshColor pt-12 pb-20 min-h-[30vh]">
+        <div class="container px-6 text-center">
+          <h2
+            id="portfolio-title"
+            class="font-bold text-4xl tracking-wide capitalize mb-5"
+          >
+            my portfolio
+          </h2>
+          <p
+            id="portfolio-description"
+            class="font-medium tracking-wide leading-relaxed text-center w-full md:w-[70%] mx-auto"
+          >
+            I'm Sara Jones, a UI/UX designer dedicated to crafting intuitive and
+            visually stunning digital experiences. With a passion for
+            user-centric design, I transform ideas into functional and beautiful
+            interfaces. Let's collaborate and shape the future of design
+            together.
+          </p>
+        </div>
+      </div>
+      <div class="container px-6 -mt-[5%]">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+          <div id="cart-portfolio" class="h-fit">
+            <img class="w-full" src="./images/projectone.svg" alt="" />
+            <div class="flex items-end justify-between mt-2.5">
+              <div>
+                <p class="font-bold text-lg md:text-xl mb-2.5">
+                  Travel App Design
+                </p>
+                <p class="font-light font-sm">UX Research / App Design</p>
+              </div>
+              <a
+                href="#"
+                class="text-white font-2xl w-9 h-9 flex items-center justify-center rounded-full bg-redColor"
+                ><i class="bx bx-right-top-arrow-circle text-3xl"></i
+              ></a>
+            </div>
+          </div>
+          <div id="cart-portfolio" class="h-fit">
+            <img class="w-full" src="./images/projecttwo.svg" alt="" />
+            <div class="flex items-end justify-between mt-2.5">
+              <div>
+                <p class="font-bold text-lg md:text-xl mb-2.5">Personal Page</p>
+                <p class="font-light font-sm">Web Design</p>
+              </div>
+              <a
+                href="#"
+                class="text-white font-2xl w-9 h-9 flex items-center justify-center rounded-full bg-redColor"
+                ><i class="bx bx-right-top-arrow-circle text-3xl"></i
+              ></a>
+            </div>
+          </div>
+          <div id="cart-portfolio" class="h-fit">
+            <img class="w-full" src="./images/projectthree.svg" alt="" />
+            <div class="flex items-end justify-between mt-2.5">
+              <div>
+                <p class="font-bold text-lg md:text-xl mb-2.5">
+                  Educational Platform
+                </p>
+                <p class="font-light font-sm">Web Design / Usability Testing</p>
+              </div>
+              <a
+                href="#"
+                class="text-white font-2xl w-9 h-9 flex items-center justify-center rounded-full bg-redColor"
+                ><i class="bx bx-right-top-arrow-circle text-3xl"></i
+              ></a>
+            </div>
+          </div>
+          <div id="cart-portfolio" class="h-fit">
+            <img class="w-full" src="./images/projectfour.svg" alt="" />
+            <div class="flex items-end justify-between mt-2.5">
+              <div>
+                <p class="font-bold text-lg md:text-xl mb-2.5">
+                  Home Services Page
+                </p>
+                <p class="font-light font-sm">Web Design / Marketing</p>
+              </div>
+              <a
+                href="#"
+                class="text-white font-2xl w-9 h-9 flex items-center justify-center rounded-full bg-redColor"
+                ><i class="bx bx-right-top-arrow-circle text-3xl"></i
+              ></a>
+            </div>
+          </div>
+          <div id="cart-portfolio" class="h-fit">
+            <img class="w-full" src="./images/projectfive.svg" alt="" />
+            <div class="flex items-end justify-between mt-2.5">
+              <div>
+                <p class="font-bold text-lg md:text-xl mb-2.5">
+                  Coffee House Landing Page
+                </p>
+                <p class="font-light font-sm">UX Research / Web Design</p>
+              </div>
+              <a
+                href="#"
+                class="text-white font-2xl w-9 h-9 flex items-center justify-center rounded-full bg-redColor"
+                ><i class="bx bx-right-top-arrow-circle text-3xl"></i
+              ></a>
+            </div>
+          </div>
+          <div id="cart-portfolio" class="h-fit">
+            <img class="w-full" src="./images/projectsix.svg" alt="" />
+            <div class="flex items-end justify-between mt-2.5">
+              <div>
+                <p class="font-bold text-lg md:text-xl mb-2.5">
+                  Furniture Mobile App
+                </p>
+                <p class="font-light font-sm">App Design</p>
+              </div>
+              <a
+                href="#"
+                class="text-white font-2xl w-9 h-9 flex items-center justify-center rounded-full bg-redColor"
+                ><i class="bx bx-right-top-arrow-circle text-3xl"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="container px-6 py-12">
+        <h2
+          id="design-title"
+          class="font-bold text-4xl tracking-wide capitalize text-center mb-5"
+        >
+          Core Design Skills
+        </h2>
+        <p
+          id="design-description"
+          class="font-medium tracking-wide leading-relaxed text-center w-full md:w-[80%] mx-auto"
+        >
+          I excel in essential design skills, creating visually stunning and
+          functional digital experiences. From UI design to UX research, my
+          passion is to craft effective and memorable digital solutions.
+        </p>
+        <div
+          class="flex flex-col lg:flex-row items-start justify-between mt-10"
+        >
+          <div id="skills-left" class="w-full lg:w-[48%]">
+            <div class="mb-5">
+              <p class="font-bold text-xl leading-relaxed">
+                Interaction Design
+              </p>
+              <div class="flex items-center gap-5">
+                <div class="w-full h-1.5 bg-gray-300">
+                  <div class="h-1.5 bg-black w-[60%]"></div>
+                </div>
+                <p class="font-bold text-xl leading-relaxed">60%</p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="font-bold text-xl leading-relaxed">Usability Testing</p>
+              <div class="flex items-center gap-5">
+                <div class="w-full h-1.5 bg-gray-300">
+                  <div class="h-1.5 bg-black w-[70%]"></div>
+                </div>
+                <p class="font-bold text-xl leading-relaxed">70%</p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="font-bold text-xl leading-relaxed">User Research</p>
+              <div class="flex items-center gap-5">
+                <div class="w-full h-1.5 bg-gray-300">
+                  <div class="h-1.5 bg-black w-[45%]"></div>
+                </div>
+                <p class="font-bold text-xl leading-relaxed">45%</p>
+              </div>
+            </div>
+          </div>
+          <div id="skills-right" class="w-full lg:w-[48%]">
+            <div class="mb-5">
+              <p class="font-bold text-xl leading-relaxed">Figma</p>
+              <div class="flex items-center gap-5">
+                <div class="w-full h-1.5 bg-gray-300">
+                  <div class="h-1.5 bg-black w-[95%]"></div>
+                </div>
+                <p class="font-bold text-xl leading-relaxed">95%</p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="font-bold text-xl leading-relaxed">Prototyping</p>
+              <div class="flex items-center gap-5">
+                <div class="w-full h-1.5 bg-gray-300">
+                  <div class="h-1.5 bg-black w-[55%]"></div>
+                </div>
+                <p class="font-bold text-xl leading-relaxed">55%</p>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="font-bold text-xl leading-relaxed">
+                Information Architecture
+              </p>
+              <div class="flex items-center gap-5">
+                <div class="w-full h-1.5 bg-gray-300">
+                  <div class="h-1.5 bg-black w-[80%]"></div>
+                </div>
+                <p class="font-bold text-xl leading-relaxed">80%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-fleshColor relative overflow-hidden">
+      <div
+        class="block bg-redColor w-32 h-32 rounded-full top-[-4.5rem] left-[50%] transform translate-x-[-50%] absolute blur-md"
+      ></div>
+      <div class="container px-6 py-12">
+        <h2
+          id="testemonials-title"
+          class="font-bold text-4xl tracking-wide capitalize mb-10 text-center"
+        >
+          Testemonials
+        </h2>
+        <!-- Swiper -->
+        <div id="testemonials-cart" class="swiper mySwiper z-0">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="flex items-center justify-center text-center flex-col gap-5 w-[70%]"
+              >
+                <p class="font-semibold text-lg">
+                  Sara Jones's designs are both visually captivating and highly
+                  effective. She transformed our website, enhancing user
+                  engagement and conversions. Her attention to detail and
+                  creative approach are top-notch. Highly recommended!
+                </p>
+                <p
+                  class="font-bold text-xl flex items-center flex-col gap-y-2.5 md:flex-row"
+                >
+                  <img
+                    class="w-14 h-14 lg:w-20 lg:h-20 mr-2.5"
+                    src="./images/user.svg"
+                    alt=""
+                  />Younes Boukrim
+                  <span class="font-light text-base ml-2.5">
+                    / CEO of XYZ Company</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide flex items-center justify-center">
+              <div
+                class="flex items-center justify-center text-center flex-col gap-5 w-[70%]"
+              >
+                <p class="font-semibold text-lg">
+                  Sara Jones's designs are both visually captivating and highly
+                  effective. She transformed our website, enhancing user
+                  engagement and conversions. Her attention to detail and
+                  creative approach are top-notch. Highly recommended!
+                </p>
+                <p
+                  class="font-bold text-xl flex items-center flex-col gap-y-2.5 md:flex-row"
+                >
+                  <img
+                    class="w-14 h-14 lg:w-20 lg:h-20 mr-2.5"
+                    src="./images/user.svg"
+                    alt=""
+                  />Alucard Bou
+                  <span class="font-light text-base ml-2.5">
+                    / CEO of XYZ Company</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      <div class="container px-6 py-12 flex items-center flex-col gap-5">
+        <h2
+          id="blog-title"
+          class="font-bold text-4xl tracking-wide capitalize text-center"
+        >
+          Design Insights and Inspiration
+        </h2>
+        <p
+          id="blog-description"
+          class="font-medium tracking-wide leading-relaxed text-center w-full md:w-[60%]"
+        >
+          Discover industry insights, expert tips, and design inspiration. Stay
+          updated with the latest trends in web design and user experience.
+        </p>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-12"
+        >
+          <div id="cart-blog" class="w-full flex flex-col shadow rounded-sm">
+            <img class="w-full" src="./images/inspiration1.svg" alt="" />
+            <div class="py-2 px-4">
+              <p class="mb-2 font-normal text-sm">August 15, 2023 / UX</p>
+              <p class="mb-4 font-bold text-lg">
+                Typography Tips for Design Success
+              </p>
+              <p class="font-normal text-normal text-base">
+                Dive into the world of web typography and discover how to
+                choose, pair, and optimize fonts for compelling and readable
+                digital designs.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="px-4 mb-4 flex items-center gap-2.5 text-lg font-bold mt-auto"
+              >Learn More <i class="bx bx-chevron-right text-lg font-bold"></i
+            ></a>
+          </div>
+          <div
+            id="cart-blog"
+            class="w-full flex flex-col lg:hidden xl:flex shadow rounded-sm"
+          >
+            <img class="w-full" src="./images/inspiration2.svg" alt="" />
+            <div class="py-2 px-4">
+              <p class="mb-2 font-normal text-sm">August 15, 2023 / UX</p>
+              <p class="mb-4 font-bold text-lg">Color Psychology in UX</p>
+              <p class="font-normal text-normal text-base">
+                Explore how color choices impact user emotions and
+                decision-making in UX design.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="px-4 mb-4 flex items-center gap-2.5 text-lg font-bold mt-auto"
+              >Learn More <i class="bx bx-chevron-right text-lg font-bold"></i
+            ></a>
+          </div>
+          <div id="cart-blog" class="w-full flex flex-col shadow rounded-sm">
+            <img class="w-full" src="./images/inspiration3.svg" alt="" />
+            <div class="py-2 px-4">
+              <p class="mb-2 font-normal text-sm">August 15, 2023 / UX</p>
+              <p class="mb-4 font-bold text-lg">
+                Boosting UX with Microinteractions
+              </p>
+              <p class="font-normal text-normal text-base">
+                Explore how color choices impact user emotions and
+                decision-making in UX design.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="px-4 mb-4 flex items-center gap-2.5 text-lg font-bold mt-auto"
+              >Learn More <i class="bx bx-chevron-right text-lg font-bold"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-fleshColor">
+      <div
+        class="flex flex-col items-start justify-between lg:flex-row gap-5 container px-6 py-12 relative overflow-hidden"
+      >
+        <div
+          class="block bg-redColor w-32 h-32 rounded-full top-[50%] left-[-5rem] transform translate-y-[-50%] absolute blur-md"
+        ></div>
+        <div
+          id="contact-left"
+          class="w-full lg:w-[50%] self-stretch flex flex-col items-start justify-between gap-5 py-4 z-10"
+        >
+          <div>
+            <h3 class="text-3xl md:text-4xl font-bold mb-5">Get in Touch</h3>
+            <p class="text-base font-medium mb-5">
+              Have a question or a project in mind? I'd love to hear from you.
+              Let's chat and make something amazing together.
+            </p>
+          </div>
+          <div class="mb-5">
+            <p class="text-base font-medium flex items-center mb-2.5">
+              <i class="bx bxs-phone-call text-xl mr-2.5"></i> +1205 5872 321
+            </p>
+            <p class="text-base font-medium flex items-center mb-2.5">
+              <i class="bx bxs-envelope text-xl mr-2.5"></i>
+              contact@sarajonesdesign.com
+            </p>
+            <p class="text-base font-medium flex items-center mb-2.5">
+              <i class="bx bx-target-lock text-xl mr-2.5"></i> 1234 Design
+              Street,Creativeville, Webland,Imaginary State, 98765
+            </p>
+          </div>
+          <div class="flex items-center gap-5">
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-twitter"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-instagram-alt"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-facebook"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-dribbble"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <div
+          id="contact-right"
+          class="w-full lg:w-[50%] self-stretch flex flex-col items-start justify-between gap-5 py-4"
+        >
+          <input
+            class="w-full py-2 px-4 outline-none border-none placeholder:text-sm"
+            type="text"
+            placeholder="Full Name"
+            name=""
+            id=""
+            required
+          />
+          <input
+            class="w-full py-2 px-4 outline-none border-none placeholder:text-sm"
+            type="tel"
+            placeholder="Phone"
+            name=""
+            id=""
+            required
+          />
+          <input
+            class="w-full py-2 px-4 outline-none border-none placeholder:text-sm"
+            type="email"
+            placeholder="Email"
+            name=""
+            id=""
+            required
+          />
+          <textarea
+            class="w-full py-2 px-4 overflow-hidden resize-none outline-none border-none placeholder:text-sm"
+            name=""
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input
+            type="button"
+            class="w-fit cursor-pointer bg-blackColor text-white font-bold py-2 px-4 transition duration-500 ease-in-out hover:scale-[0.90] capitalize"
+            value="Send Message"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="bg-blackColor footer">
+      <div
+        class="flex flex-col items-center justify-center container gap-5 py-8 lg:py-16"
+      >
+        <ul
+          id="footer-content-one"
+          class="flex flex-col sm:flex-row items-center justify-center gap-10 text-white"
+        >
+          <li>
+            <a
+              href="#"
+              class="capitalize font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="capitalize font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >services</a
+            >
+          </li>
+          <a href="#"
+            ><h1 class="text-2xl font-semibold font-inter text-white">
+              S<span class="text-redColor">J Design</span>
+            </h1></a
+          >
+          <li>
+            <a
+              href="#"
+              class="capitalize font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="capitalize font-bold transition duration-500 ease-in-out hover:scale-[0.90] block"
+              >blog</a
+            >
+          </li>
+        </ul>
+        <div
+          id="footer-content-two"
+          class="flex items-center justify-center flex-col"
+        >
+          <p class="text-white mb-5 font-light text-sm">
+            Follow me on social media:
+          </p>
+          <div class="flex items-center gap-5">
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-twitter"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-instagram-alt"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-facebook"
+              ></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 flex items-center justify-center rounded-full bg-white transition duration-500 ease-linear hover:bg-blackColor"
+              ><i
+                class="text-xl text-blackColor transition duration-200 ease-linear hover:text-white bx bxl-dribbble"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="container min-h-10 fixed bottom-[10%] left-[50%] translate-x-[-50%] overflow-hidden"
+    >
+      <!-- -->
+      <div
+        id="up"
+        class="hidden items-center justify-center w-10 h-10 bg-redColor text-white absolute rounded-full cursor-pointer mx-6 right-0 hover:text-redColor hover:bg-white"
+      >
+        <i class="bx bx-chevrons-up text-2xl"></i>
+      </div>
+    </div>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

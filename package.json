@@ -1,0 +1,19 @@
+{
+  "name": "portfoliogirl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/css/style.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
+  }
+}
